@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery with Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Interactive Image Gallery</h1>
+
+  <section id="gallery">
+    <!-- Initial images -->
+    <div class="image-card">
+      <img src="images/pexels-serge-vuillermoz-2150077877-31100755.jpg" alt="Sample Image 1">
+      <p>Sample Image 1</p>
+    </div>
+    <div class="image-card">
+      <img src="images/Snapchat-380262259 (1).jpg" alt="Sample Image 2">
+      <p>Sample Image 2</p>
+    </div>
+  </section>
+
+  <section id="form-section">
+    <h2>Add a New Image</h2>
+    <form id="imageForm">
+      <label>
+        Image Title:
+        <input type="text" id="title" required>
+      </label>
+      <label>
+        Image URL:
+        <input type="url" id="url" required>
+      </label>
+      <button type="submit">Add Image</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
